@@ -1,5 +1,10 @@
 body {
   background-color: #575353;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+ text-decoration: none;
 }
 
 #container {
@@ -13,6 +18,11 @@ body {
   background-color: #10295c;
   color: white;
   text-align: center;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+ margin: 0; 
 }
 
 #content {
@@ -24,6 +34,15 @@ body {
   float: left;
 }
 
+#nav ul {
+ list-style-type: none;
+  padding: 0;
+}
+
+#nav.selected {
+  font-weight; bold;
+}
+
 #main {
  width: 775px; 
   float: right
@@ -31,5 +50,8 @@ body {
 
 #footer {
  clear: both; 
- text-align: center;
+ text-align: right;
+ padding: 10px;
+ background-color: #999;
+  color: white;
 }
