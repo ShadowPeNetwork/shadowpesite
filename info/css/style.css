@@ -46,8 +46,9 @@ h1, h2, h3 {
 }
 
 #main {
- width: 775px; 
+ width: 500px; 
   float: right
+    text-align: center;
 }
 
 #footer {
