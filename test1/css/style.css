@@ -15,6 +15,7 @@ a {
 }
 
 #header {
+  background-color: #000;
   background-image: url(../img/5-dots.png);
   color: white;
   text-align: center;
