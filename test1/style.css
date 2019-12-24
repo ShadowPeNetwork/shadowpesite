@@ -14,3 +14,22 @@ body {
   color: white;
   text-align: center;
 }
+
+#content {
+ padding: 10px; 
+}
+
+#nav {
+ width: 125px; 
+  float: left;
+}
+
+#main {
+ width: 775px; 
+  float: right
+}
+
+#footer {
+ clear: both; 
+ text-align: center;
+}
