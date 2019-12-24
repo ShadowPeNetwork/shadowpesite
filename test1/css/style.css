@@ -15,7 +15,7 @@ a {
 }
 
 #header {
-  background-color: #10295c;
+  background-image: url(../img/banner.jpg);
   color: white;
   text-align: center;
   padding: 10px;
