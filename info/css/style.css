@@ -50,7 +50,7 @@ h1, h2, h3 {
   float: right
   text-align: center;
   padding-left: 200;
-  display: inline-block;
+ margin: auto 0;
 }
 
 #footer {
