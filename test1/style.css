@@ -10,6 +10,10 @@ a {
  font-weight: bold; 
 }
 
+#nav {
+   background-image: linear-gradient(#e0dcdc, black); 
+}
+
 #home {
  background-color: none;
   float: left;
