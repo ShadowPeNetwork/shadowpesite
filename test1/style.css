@@ -10,8 +10,19 @@ a {
  font-weight: bold; 
 }
 
+#container {
+ width: 1000px;
+ background-color: linear-gradient(#e3dada, #d1c5c5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+    background-image: linear-gradient(#e0dcdc, black);
+}
+
 #nav {
-   background-image: linear-gradient(#e0dcdc, black); 
+   background-color: black;
 }
 
 #home {
