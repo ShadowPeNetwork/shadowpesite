@@ -17,19 +17,23 @@ a {
 #home {
  background-color: none;
   float: left;
+    padding: 50px;
 }
 
 #info {
  background-color: none;
  float: left; 
+    padding: 50px;
 }
 
 #server {
  background-color: none;
- float: left; 
+ float: left;
+    padding: 50px;
 }
 
 #login {
  background-color: none;
- float: right; 
+ float: left;
+  padding: 50px;
 }
