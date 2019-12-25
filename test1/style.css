@@ -12,13 +12,13 @@ a {
 
 #container {
  width: 1000px;
- background-color: linear-gradient(#e3dada, #d1c5c5);
+ background-image: linear-gradient(#e3dada, #d1c5c5);
   margin-left: auto;
   margin-right: auto;
 }
 
 #header {
-    background-image: linear-gradient(#e0dcdc, black);
+    background-color: black;
 }
 
 #nav {
