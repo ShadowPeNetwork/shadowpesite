@@ -1,3 +1,31 @@
 body {
   background-image: linear-gradient(#e0dcdc, black);
 }
+
+a {
+ text-decoration: none;
+}
+
+.selected {
+ font-weight: bold; 
+}
+
+#home {
+ background-color: none;
+  float: left;
+}
+
+#info {
+ background-color: none;
+ float: left; 
+}
+
+#server {
+ background-color: none;
+ float: left; 
+}
+
+#login {
+ background-color: none;
+ float: right; 
+}
