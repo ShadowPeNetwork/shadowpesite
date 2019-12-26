@@ -11,8 +11,8 @@ a {
 }
 
 #container {
- width: 1000px;
- background-image: linear-gradient(#e3dada, #d1c5c5);
+  background-color: white;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,29 +22,29 @@ a {
 }
 
 #nav {
-   background-color: black;
+   background-color: none;
 }
 
 #home {
- background-color: none;
+ background-color: black;
   float: left;
     padding: 50px;
 }
 
 #info {
- background-color: none;
+ background-color: black;
  float: left; 
     padding: 50px;
 }
 
 #server {
- background-color: none;
+ background-color: black;
  float: left;
     padding: 50px;
 }
 
 #login {
- background-color: none;
+ background-color: black;
  float: left;
   padding: 50px;
 }
