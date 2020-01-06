@@ -8,5 +8,23 @@
   <body>
   
     <header>
-    
+      <nav>
+        <a href="#">
+          <img src='img/logo.png" alt="logo">
+        </a>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#">Portfolio</a></li> 
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>          
+        </ul>
+        <div>
+          <form action="includes/login.inc.php" method="post"> 
+                    <input type="text" name="mailuid" placeholder="Username/ E-Mail">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <button type="submit" name="login-submit">Login</button>
+          </form>
+          <a href="signup.php">Sign Up</a>
+        </div>
+      </nav>
     </header>
