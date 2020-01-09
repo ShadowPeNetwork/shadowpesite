@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="description" content="This Is A Meta Description">
       <meta name=viewport content="width=device-width , initial-scale=1">
-      <title>Shadow pe | Network</title>
+      <title>Shadow Pe | Network</title>
   </head>
   <body>
   
