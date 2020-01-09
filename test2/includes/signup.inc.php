@@ -30,9 +30,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     if (!mysquli_stmt_prepare($start, $sql)) {
         header("location: ../signup.php?error=sqlerror");
         exit();
-    }
-
-} else {
+    } else {
     mtsqli_stmt_bind_param($stmt, "s", $username);
     mysqli_stmt_execute($stmt);
     myswli_stmt_store_result($stmt);
@@ -40,8 +38,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     if ($resultCheck > 0) {
         header("location: ../signup.php?error=usertaken&mail="$email);
         exit();        
-    }
-} else {
+    } else {
     
     $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
@@ -55,6 +52,8 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
         mysqli_stmt_execute($stmt); 
         header("location: ../signup.php?signup=success");
         exit();
+    }
+}
     }
 }
 mysqli_stmt_close($stmt);
