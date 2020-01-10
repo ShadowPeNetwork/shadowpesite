@@ -3,15 +3,13 @@ body {
 }
 
 .logo {
-    width: 7.5%;
+    width: 50px
+    height: 50px;
+    padding: 5px 5px;
     position: relative;
 }
 
-.logo:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
+
 
 header {
   height: 60px;

@@ -8,6 +8,7 @@ session_start();
       <meta name=viewport content="width=device-width , initial-scale=1">
       <title>Shadow Pe | Network</title>
       <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="icon" href="img/logo.png" type="image/png">
   </head>
   <body>
 
@@ -16,12 +17,7 @@ session_start();
         <a href="#">
           <img src="img/logo.png" alt="logo" class="logo">
         </a>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
         <div>
           <?php
             if (isset($_SESSION['userId'])) {
