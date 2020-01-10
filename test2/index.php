@@ -5,18 +5,19 @@ ini_set('display_errors', 'On');
 
  require "header.php";
  ?>
- 
+
   <main>
     <?php
       if (isset($_SESSION['userId'])) {
         echo '<p class="login-status">You Are Logged in!</p>';
       } else {
-        echo '<p class="login-status">You Are Logged out!</p>';
+        echo '<p class="login-status">You Are Logged out!</p>
+        <a href="signup.php" class="button">Sign Up</a>';
       }
-    ?> 
-    <p>stuff</p1>   
+    ?>
+    <p>stuff</p1>
   </main>
-  
+
 <?php
   require "footer.php";
 ?>

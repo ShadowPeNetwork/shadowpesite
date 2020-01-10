@@ -32,7 +32,7 @@ session_start();
             <input type="password" name="pwd" class="login-box" placeholder="Password">
             <button type="submit" name="login-submit" class="button">Login</button>
           </form>
-            <a href="signup.php" class="button">Sign Up</a>
+
             ';
           }
         ?>
