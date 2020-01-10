@@ -31,8 +31,8 @@ session_start();
             } else {
               echo '
           <form action="includes/login.inc.php" method="post">
-             <input type="text" name="mailuid" placeholder="Username/ E-Mail">
-            <input type="password" name="pwd" placeholder="Password">
+             <input type="text" name="mailuid" class="login-box" placeholder="Username/ E-Mail">
+            <input type="password" name="pwd" class="login-box" placeholder="Password">
             <button type="submit" name="login-submit" class="button">Login</button>
           </form>
             <a href="signup.php" class="button">Sign Up</a>
