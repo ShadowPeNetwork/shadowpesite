@@ -31,7 +31,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     
     $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
     $stmt = mysqli_stmt_init($conn);
-    if (!mysquli_stmt_prepare($start, $sql)) {
+    if (!mysqli_stmt_prepare($start, $sql)) {
         header("location: ../signup.php?error=sqlerror");
         exit();
     } else {
