@@ -13,7 +13,7 @@ $password = $_POST['pwd'];
 $passwordRepeat = $_POST['pwd-repeat'];
 
 if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
-    header("location: ../signup.php?error=emptyfields&uid=".$username"&mail=".$email);
+    header("location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
     exit();
 }else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
     header("location: ../signup.php?error=invalidmailuid");
@@ -25,7 +25,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     header("location: ../signup.php?error=invaliduid&mail=".$email);
     exit();
 } else if ($password !== $passwordRepeat) {
-    header("location: ../signup.php?error=passwordcheck&mail=".$email"&uid=".$username);
+    header("location: ../signup.php?error=passwordcheck&mail=".$email."&uid=".$username);
     exit();
 } else {
     
@@ -40,7 +40,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     myswli_stmt_store_result($stmt);
     $resultCheck = mysqli_stmt_num_rows($stmt);
     if ($resultCheck > 0) {
-        header("location: ../signup.php?error=usertaken&mail="$email);
+        header("location: ../signup.php?error=usertaken&mail=".$email);
         exit();        
     } else {
     
