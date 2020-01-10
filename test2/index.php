@@ -21,3 +21,4 @@ ini_set('display_errors', 'On');
 <?php
   require "footer.php";
 ?>
+``
