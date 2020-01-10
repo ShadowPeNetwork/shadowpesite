@@ -24,7 +24,7 @@ ini_set('display_errors', 'On');
                     echo '<p class="signuperror">There Was An Error Contacting Our Databases. Please Contact A Developer If This Issue Persists!!</p>';
                 }
             } else if (isset($_GET['signup'] == "success")) {
-                echo '<p class="signupsuccessful">Successfully Signed Up!<p>'
+                echo '<p class="signupsuccessful">Successfully Signed Up!<p>';
             }
         ?>
         <form class="form-signup" action="includes/signup.inc.php" method="post">
