@@ -5,7 +5,7 @@ ini_set('display_errors', 'On');
 
 if (isset($_POST['login-submit'])) {
 
-    require 'ddh.inc.php';
+    require 'dbh.inc.php';
 
     $mailuid = $_POST['mailuid'];
     $password = $_POST['pwd'];
