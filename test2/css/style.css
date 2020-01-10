@@ -12,3 +12,22 @@ body {
     display: block;
     padding-bottom: 100%;
 }
+
+header {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+header.button {
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #555;
+  color: white;
+  border: 2px solid #555555;
+}
+header.button:hover {
+  background-color: white;
+  color: black;
+}
