@@ -13,10 +13,11 @@ session_start();
   <body>
 
     <header>
+      <a href="#">
+        <img src="img/logo.png" alt="logo" class="logo">
+      </a>
       <nav>
-        <a href="#">
-          <img src="img/logo.png" alt="logo" class="logo">
-        </a>
+
 
         <div>
           <?php
