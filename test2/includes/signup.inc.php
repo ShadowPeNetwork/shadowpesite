@@ -38,7 +38,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     } else {
     mysqli_stmt_bind_param($stmt, "s", $username);
     mysqli_stmt_execute($stmt);
-    myswli_stmt_store_result($stmt);
+    mysqli_stmt_store_result($stmt);
     $resultCheck = mysqli_stmt_num_rows($stmt);
     if ($resultCheck > 0) {
         header("location: ../signup.php?error=usertaken&mail=".$email);
@@ -47,7 +47,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     
     $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
-    if (!mysquli_stmt_prepare($start, $sql)) {
+    if (!mysqli_stmt_prepare($start, $sql)) {
         header("location: ../signup.php?error=sqlerror");
         exit();
     } else {
