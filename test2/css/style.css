@@ -17,6 +17,11 @@ header {
 }
 
 .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;

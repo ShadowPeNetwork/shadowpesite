@@ -12,7 +12,7 @@ ini_set('display_errors', 'On');
         echo '<p class="login-status">You Are Logged in!</p>';
       } else {
         echo '<p class="login-status">You Are Logged out!</p>
-        <a href="signup.php" class="button">Sign Up</a>';
+        ';
       }
     ?>
     <p>stuff</p1>
