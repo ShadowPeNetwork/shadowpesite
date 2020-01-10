@@ -33,7 +33,7 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($start, $sql)) {
         // header("location: ../signup.php?error=sqlerror");
-        die(mysqli_error())
+        die(mysqli_error());
         exit();
     } else {
     mtsqli_stmt_bind_param($stmt, "s", $username);
