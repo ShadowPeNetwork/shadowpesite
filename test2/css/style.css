@@ -4,5 +4,11 @@ body {
 
 .logo {
     width: 5%;
-    height: 5%;
+    position: relative;
+}
+
+.logo:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
