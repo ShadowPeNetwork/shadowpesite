@@ -15,7 +15,7 @@ if (isset($_POST['login-submit'])) {
         //header("location: ../index.php?error=emptyfields");
     exit();   
     } else {
-        $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+        $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?";
         $stmt = mtsqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             die(mysqli_error());
