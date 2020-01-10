@@ -27,7 +27,7 @@ session_start();
             if (isset($_SESSION['userId'])) {
             echo '<form action="includes/logout.inc.php" method="post"> 
             <button type="submit" name="logout-submit">Logout</button>
-          </form>'
+          </form>';
             } else {
               echo '
           <form action="includes/login.inc.php" method="post"> 
@@ -36,7 +36,7 @@ session_start();
             <button type="submit" name="login-submit">Login</button>
           </form>
             <a href="signup.php">Sign Up</a>
-            '
+            ';
           }
         ?>
         </div>
