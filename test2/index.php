@@ -9,7 +9,8 @@
       } else {
         echo '<p class="login-status">You Are Logged in!</p>'
       }
-    ?>    
+    ?> 
+    <p>stuff</p1>   
   </main>
   
 <?php
