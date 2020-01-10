@@ -11,14 +11,14 @@ if (isset($_POST['login-submit'])) {
     $password = $_POST['pwd'];
 
     if (empty($mailuid) || empty($password)) {
-        die(mysqli_error())
+        die(mysqli_error());
         //header("location: ../index.php?error=emptyfields");
     exit();   
     } else {
         $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
         $stmt = mtsqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            die(mysqli_error())
+            die(mysqli_error());
             //header("location: ../index.php?error=emptyfields");
             exit();  
         } else {
@@ -28,7 +28,7 @@ if (isset($_POST['login-submit'])) {
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['pwdUsers']);
                 if ($pwdCheck == false) {
-                    die(mysqli_error())
+                    die(mysqli_error());
                     //header("location: ../index.php?error=wrongpwd");
                 exit();                    
                 } else if ($pwdCheck == true) {
@@ -39,12 +39,12 @@ if (isset($_POST['login-submit'])) {
                 //header("location: ../index.php?login=success");
                 exit();                
                 } else {
-                    die(mysqli_error())
+                    die(mysqli_error());
                     //header("location: ../index.php?error=nouser");
                 exit();                
                 }
             } else {
-                die(mysqli_error())
+                die(mysqli_error());
                 //header("location: ../index.php?error=nouser");
             exit();     
             }
