@@ -16,7 +16,9 @@ session_start();
   <div id="header">
     <img src="img/logo.png" alt="logo" class="logo">
     <div id="nav">
-      <input type="submit" value="Apply For Staff" href="https://shdowpe.azurewebsites.net/apply/form.php">
+      <form action="https://shadowpe.azurewebsites.net/apply/form.php">
+        <button type="submit" class="button">Apply For Staff</button>
+      </form>
     </div>
     <div id="button-div">
 
