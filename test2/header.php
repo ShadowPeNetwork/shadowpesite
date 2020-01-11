@@ -1,6 +1,32 @@
 <?php
 session_start();
 ?>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Wlcome To ShadowPe! The Leading Minecraft Bedrock Server!">
+    <meta name=viewport content="width=device-width , initial-scale=1">
+    <title>Shadow Pe | Network</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+  <div id="header">
+    <img src="img/logo.png" alt="logo" class="logo">
+    <div id="nav">
+      <input type="submit" value="Apply For Staff" href="https://shdowpe.azurewebsites.net/apply/form.php">
+    </div>
+    <div id="button-div">
+
+    </div>
+  </div>
+
+</html>
+
+
+
 <html>
   <head>
       <meta charset="utf-8">
@@ -11,10 +37,9 @@ session_start();
       <link rel="icon" href="img/logo.png" type="image/png">
   </head>
   <body>
-
     <header>
       <a href="#">
-        <img src="img/logo.png" alt="logo" class="logo">
+        <a href="" class="nav-button">Sign Up</a>
       </a>
       <nav>
 
