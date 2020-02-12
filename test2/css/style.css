@@ -32,7 +32,7 @@ header {
 }
 
 .button {
-  display: inline-flex;
+  display: block;
   align-items: center;
   background: #C06C84;
   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
@@ -81,7 +81,7 @@ header {
     animation: pulse 2s .4s infinite linear;
   }
   &:hover:before, &:hover:after {
-    display: none;
+    display: block;
   }
 }
 
