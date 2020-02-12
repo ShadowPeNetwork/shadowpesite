@@ -40,13 +40,7 @@ session_start();
   </head>
   <body>
     <header>
-      <a href="#">
-        <a href="" class="nav-button">Sign Up</a>
-      </a>
-      <nav>
-
-
-        <div>
+      <div class="nav">
           <?php
             if (isset($_SESSION['userId'])) {
             echo '<form action="includes/logout.inc.php" method="post">
@@ -63,6 +57,5 @@ session_start();
             ';
           }
         ?>
-        </div>
-      </nav>
+      </div>
     </header>
