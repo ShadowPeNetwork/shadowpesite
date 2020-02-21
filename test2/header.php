@@ -16,7 +16,7 @@ session_start();
   <div id="header">
     <img src="img/logo.png" alt="logo" class="logo">
     <div id="nav">
-      <form action="https://shadowpe.azurewebsites.net/apply/form.php">
+      <form action="https://shadowpe.azurewebsites.net/apply/form.php" class="button">
         <button type="submit" class="button">Apply For Staff</button>
       </form>
     </div>
@@ -40,29 +40,22 @@ session_start();
   </head>
   <body>
     <header>
-      <a href="#">
-        <a href="" class="nav-button">Sign Up</a>
-      </a>
-      <nav>
-
-
-        <div>
+      <div class="nav">
           <?php
             if (isset($_SESSION['userId'])) {
             echo '<form action="includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit" class="button">Logout</button>
-          </form>';
+            </form>';
             } else {
               echo '
-          <form action="includes/login.inc.php" method="post">
-             <input type="text" name="mailuid" class="login-box" placeholder="Username/ E-Mail">
+            <form action="includes/login.inc.php" method="post">
+            <input type="text" name="mailuid" class="login-box" placeholder="Username/ E-Mail">
             <input type="password" name="pwd" class="login-box" placeholder="Password">
             <button type="submit" name="login-submit" class="button">Login</button>
-          </form>
+            </form>
           <a href="signup.php" class="button">Sign Up</a>
             ';
           }
         ?>
-        </div>
-      </nav>
+      </div>
     </header>
